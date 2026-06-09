@@ -64,6 +64,7 @@ const Upload = () => {
         await kv.set(`resume:${uuid}`, JSON.stringify(data));
         setStatusText('Analysis complete, redirecting...');
         console.log(data);
+        navigate(`/resume/${uuid}`);
     }
 
 
@@ -95,7 +96,7 @@ const Upload = () => {
                         <>
                         <h2>
                             {statusText}
-                            <img src="/images/resume-scan.gif" className="w-full" />
+                            <img src="/images/resume-scan.gif" alt="loading" className="w-full" />
                         </h2>
                         </>
                     ) : (
