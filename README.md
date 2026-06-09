@@ -37,6 +37,8 @@
 The fastest way to run Resumatch:
 
 ```bash
+git clone https://github.com/aryanpandita/ai-resume-analyzer.git
+cd ai-resume-analyzer
 docker build -t resumatch .
 docker run -p 3000:3000 --name resumatch resumatch
 ```
@@ -59,7 +61,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/ai-resume-analyzer.git
+git clone https://github.com/aryanpandita/ai-resume-analyzer.git
 cd ai-resume-analyzer
 
 # Install dependencies
